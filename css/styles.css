@@ -1,1 +1,126 @@
 
+    /* 
+You must implement the following breakpoints that will be considered desktop, tablet, and mobile. 
+The browser should display a desktop version of the site when the width of the browser window is 992px and above. 
+Tablet view should appear only if the width of the browser window is between 768px and 991px, 
+inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px. */
+    /*
+
+
+Layout: In the desktop view (992px and above), 
+each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, 
+each section should become wider or narrower. (Hint: use percentages to define width and use the 'float' property. See Lecture 24). 
+For a visual reference of this view, see the desktop mockup illustration below.
+
+Layout: In the tablet view (between 768px and 991px, inclusively), 
+he first 2 sections should be in the first row and be of equal size. The 3rd section should be in the second row and 
+take up the entire row by itself. For a visual reference of this view, see the tablet mockup illustration below.
+
+Layout: In the mobile view (equal to or less than 767px), e
+ach section should take up the entire row. For a visual reference of this view, see the mobile mockup illustration below.
+ */
+    
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    body>section {
+        border: solid black 2px;
+        padding: 0px;
+        margin: 0px 0px 1px 1px;
+    }
+    
+    section>h2 {
+        border: solid black px;
+        margin: 0px;
+        padding: 1%;
+    }
+    
+    @media screen and (max-width: 767px) {
+        body>section {
+            border: solid black 1px;
+            background-color: green;
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+        h2 {
+            margin: 1%;
+            float: right;
+            padding-bottom: 10px;
+            clear: left;
+        }
+        section>p {
+            float: left;
+            ;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        body>#Menu1,
+        #Menu2 {
+            background-color: green;
+            float: left;
+            width: 49%;
+            position: relative;
+        }
+        h2 {
+            margin: 1%;
+            float: right;
+            padding-bottom: 10px;
+            clear: left;
+        }
+        section>p {
+            float: left;
+            ;
+        }
+        body>#Menu3 {
+            background-color: green;
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+        h2 {
+            margin: 1%;
+            float: right;
+            padding-bottom: 10px;
+            clear: left;
+        }
+        section>p {
+            float: left;
+            ;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        body>section {
+            background-color: green;
+            float: left;
+            width: 33%;
+            position: relative;
+        }
+        h2 {
+            margin: 1%;
+            float: right;
+            padding-bottom: 10px;
+            clear: left;
+        }
+        section>p {
+            float: left;
+            ;
+        }
+    }
+    
+    #Chicken {
+        background-color: yellowgreen;
+    }
+    
+    #Beef {
+        background-color: red;
+    }
+    
+    #Fish {
+        background-color: salmon;
+    }
