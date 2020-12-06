@@ -25,7 +25,9 @@ ach section should take up the entire row. For a visual reference of this view, 
         padding: 0px;
         margin: 0px;
     }
-    
+    h1 {
+        margin : 2px;
+}
     body>section {
         border: solid black 2px;
         padding: 0px;
